@@ -5,124 +5,181 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience | Rishin C K</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #1e1e2f;
-      padding: 1rem 2rem;
-    }
-    .logo {
-      color: #ffffff;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-    nav ul li a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav ul li a:hover {
-      color: #00bfa6;
-    }
-    .experience-section {
-      padding: 2rem;
-    }
-    .experience-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .experience-card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .experience-card h3 {
-      margin-top: 0;
-      color: #008080;
-    }
-    .experience-card p {
-      margin: 0.5rem 0;
-      line-height: 1.6;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1e1e2f;
-      color: white;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">Rishin C K</div>
+      <a href="index.html" class="logo">Rishin C K</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
-  <section class="experience-section">
-    <h2>Experience & Leadership</h2>
-
-    <div class="experience-card">
-      <h3>Flutter Developer Intern — Genzee Technology</h3>
-      <p><strong>Location:</strong> Ernakulam</p>
-      <p>Developed responsive mobile applications using Flutter. Integrated Firebase for real-time database features. Collaborated in agile sprints and conducted code reviews to improve team performance.</p>
+  <section class="section" style="margin-top: 6rem;">
+    <div class="section-title">
+      <h2>Experience & Leadership</h2>
     </div>
 
-    <div class="experience-card">
-      <h3>Chairperson — CSE Department Students' Association</h3>
-      <p><strong>Institution:</strong> Malabar College of Engineering and Technology</p>
-      <p>Led technical events, coding competitions, and department activities. Enhanced communication between faculty and students while fostering a collaborative learning environment.</p>
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">2024 - Present</div>
+          <h3><i class="fas fa-mobile-alt"></i> Flutter Developer Intern</h3>
+          <h4>Genzee Technology, Ernakulam</h4>
+          <p>Developed responsive mobile applications using Flutter framework. Integrated Firebase for real-time database features and user authentication. Collaborated in agile sprints and conducted code reviews to improve team performance and code quality.</p>
+          <div class="skills-used">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">2024</div>
+          <h3><i class="fab fa-python"></i> Python Full-Stack Development</h3>
+          <h4>Self-Study & Professional Development</h4>
+          <p>Completed comprehensive Python full-stack development course covering backend frameworks (Django/Flask), MongoDB database management, RESTful API development, and frontend integration. Built multiple web applications with complete CRUD functionality.</p>
+          <div class="skills-used">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">2023 - 2024</div>
+          <h3><i class="fas fa-users"></i> Chairperson</h3>
+          <h4>CSE Department Students' Association, MCET</h4>
+          <p>Led technical events, coding competitions, and department activities. Enhanced communication between faculty and students while fostering a collaborative learning environment. Organized workshops and seminars for skill development.</p>
+          <div class="skills-used">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Event Management</span>
+            <span class="skill-tag">Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">2022 - Present</div>
+          <h3><i class="fas fa-code"></i> Programming Club Member</h3>
+          <h4>Active Participant</h4>
+          <p>Active participant in coding challenges, inter-college tech fests, and hackathons. Constantly improving problem-solving and algorithmic thinking skills through competitive programming and collaborative projects.</p>
+          <div class="skills-used">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">Competitive Programming</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="experience-card">
-      <h3>Programming Club Member</h3>
-      <p>Active participant in coding challenges, inter-college tech fests, and hackathons. Constantly improving problem-solving and algorithmic thinking skills.</p>
+  <section class="section">
+    <div class="section-title">
+      <h2>Workshops & Certifications</h2>
     </div>
+    
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="workshop-header">
+          <div class="workshop-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="workshop-meta">
+            <span class="workshop-tag">IIT Delhi</span>
+            <span class="workshop-date">Tryst'24</span>
+          </div>
+        </div>
+        <h3>Cyber Security & Ethical Hacking</h3>
+        <p>Comprehensive workshop on cybersecurity fundamentals, ethical hacking techniques, penetration testing, and network security tools. Gained hands-on experience with industry-standard security assessment tools.</p>
+      </div>
 
-    <div class="experience-card">
-      <h3>Workshops Attended</h3>
-      <ul>
-        <li>Cyber Security & Ethical Hacking — IIT Delhi (Tryst’24)</li>
-        <li>Exploring Generative AI — CET (Drishti’24)</li>
-      </ul>
+      <div class="card">
+        <div class="workshop-header">
+          <div class="workshop-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="workshop-meta">
+            <span class="workshop-tag">CET</span>
+            <span class="workshop-date">Drishti'24</span>
+          </div>
+        </div>
+        <h3>Exploring Generative AI</h3>
+        <p>In-depth exploration of generative artificial intelligence, machine learning models, and their practical applications. Learned about AI ethics, implementation strategies, and future trends in AI technology.</p>
+      </div>
+
+      <div class="card">
+        <div class="workshop-header">
+          <div class="workshop-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="workshop-meta">
+            <span class="workshop-tag">Self-Study</span>
+            <span class="workshop-date">2025</span>
+          </div>
+        </div>
+        <h3>DevOps Engineering</h3>
+        <p>Currently studying DevOps practices including CI/CD pipelines, containerization with Docker, cloud platforms (AWS/Azure), infrastructure as code, monitoring, and automation tools to enhance development workflows and deployment processes.</p>
+      </div>
     </div>
-    <div class="experience-card">
-      <h3>One of my editing works</h3>
-      <ul>
-        <iframe width="560" height="315" src="https://youtube.com/shorts/jo1PYw_bBnM?feature=share"
-        title="YouTube video player" frameborder="0"
-        allowfullscreen></iframe>
+  </section>
 
-        
-
-      </ul>
+  <section class="section">
+    <div class="section-title">
+      <h2>Creative Work</h2>
     </div>
-
+    
+    <div class="card">
+      <h3>Video Editing Portfolio</h3>
+      <p>Showcasing creative video editing skills with professional-quality content creation.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/jo1PYw_bBnM" 
+                title="Video Editing Work" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mohammed Rishin C K</p>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="mailto:rishinkpm@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-rishin-c-k-a00525240" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/_rishin___ck?igsh=eXE4Y3RrOGk3bXFx&utm_source=qr" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="tel:+916238634185" title="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Mohammed Rishin C K. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
