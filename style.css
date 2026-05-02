@@ -1,52 +1,44 @@
 /* ========================================
-   MODERN PORTFOLIO CSS FRAMEWORK
-   Dark Theme with Neon Accents
+   CLEAN & MINIMALIST PORTFOLIO
+   Modern Design with Subtle Accents
    ======================================== */
 
 /* ========================================
    CSS CUSTOM PROPERTIES (VARIABLES)
    ======================================== */
 :root {
-  /* Dark Theme - Neon Accent Colors */
-  --primary-color: #00d4ff;        /* Neon Blue */
-  --primary-light: #33e0ff;        /* Lighter Neon Blue */
-  --primary-dark: #0099cc;         /* Darker Neon Blue */
-  --secondary-color: #a855f7;      /* Neon Purple */
-  --secondary-light: #c084fc;      /* Lighter Neon Purple */
-  --accent-color: #00ff88;         /* Neon Green */
-  --accent-light: #33ffaa;         /* Lighter Neon Green */
+  /* Dark Theme - Purple Accents */
+  --primary-color: #1a1a1a;        /* Dark Text */
+  --accent-color: #c77dff;         /* Purple/Magenta */
+  --accent-light: #e0aaff;         /* Lighter Purple */
+  --secondary-color: #888888;      /* Medium Gray */
   
   /* Dark Background Colors */
-  --bg-primary: #0a0a0a;           /* Deep Black */
+  --bg-primary: #0f0f0f;           /* Very Dark Background */
   --bg-secondary: #1a1a1a;         /* Dark Gray */
   --bg-tertiary: #2a2a2a;          /* Medium Dark Gray */
-  --bg-card: #1e1e1e;              /* Card Background */
-  --bg-hover: #333333;             /* Hover Background */
-  --bg-nav: rgba(10, 10, 10, 0.95); /* Navigation Background */
+  --bg-card: #1a1a1a;              /* Card Background */
+  --bg-hover: #242424;             /* Hover Background */
+  --bg-nav: rgba(15, 15, 15, 0.95); /* Navigation Background */
   
-  /* Light Text Colors */
-  --text-primary: #ffffff;         /* Pure White */
-  --text-secondary: #e5e5e5;       /* Light Gray */
-  --text-tertiary: #cccccc;        /* Medium Light Gray */
-  --text-muted: #999999;           /* Muted Light Gray */
-  --text-inverse: #0a0a0a;         /* Black Text */
+  /* Text Colors */
+  --text-primary: #ffffff;         /* White Text */
+  --text-secondary: #e0e0e0;       /* Light Gray */
+  --text-tertiary: #b0b0b0;        /* Medium Gray */
+  --text-muted: #808080;           /* Muted Gray */
+  --text-inverse: #0f0f0f;         /* Dark Text */
   --text-nav: #ffffff;             /* Navigation Text */
   
-  /* Dark Border & Divider Colors */
-  --border-light: #333333;         /* Dark Border */
-  --border-medium: #444444;        /* Medium Dark Border */
-  --border-dark: #555555;          /* Lighter Dark Border */
+  /* Border Colors */
+  --border-light: #333333;         /* Light Border */
+  --border-medium: #2a2a2a;        /* Medium Border */
+  --border-dark: #1f1f1f;          /* Dark Border */
   
-  /* Dark Theme Shadow System */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
-  
-  /* Neon Glow Effects */
-  --glow-blue: 0 0 10px rgba(0, 212, 255, 0.3), 0 0 20px rgba(0, 212, 255, 0.2);
-  --glow-purple: 0 0 10px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2);
-  --glow-green: 0 0 10px rgba(0, 255, 136, 0.3), 0 0 20px rgba(0, 255, 136, 0.2);
+  /* Shadow System */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 8px 24px 0 rgba(0, 0, 0, 0.6);
   
   /* Spacing System */
   --space-xs: 0.25rem;    /* 4px */
@@ -80,6 +72,9 @@
   --font-size-3xl: 1.875rem;  /* 30px */
   --font-size-4xl: 2.25rem;   /* 36px */
   --font-size-5xl: 3rem;      /* 48px */
+  
+  /* Transitions Smooth */
+  --transition-smooth: 0.3s ease-in-out;
 }
 
 * {
@@ -95,7 +90,7 @@ body {
   font-family: var(--font-family-base);
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   overflow-x: hidden;
   font-size: var(--font-size-base);
 }
@@ -163,8 +158,8 @@ nav {
   top: 0;
   width: 100%;
   background: var(--bg-nav);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: var(--space-md) var(--space-xl);
   display: flex;
   justify-content: space-between;
@@ -172,22 +167,22 @@ nav {
   z-index: 1000;
   transition: var(--transition-normal);
   border-bottom: 1px solid var(--border-light);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .logo {
   font-size: var(--font-size-2xl);
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--text-primary);
   text-decoration: none;
   transition: var(--transition-fast);
-  text-shadow: var(--glow-blue);
+  text-shadow: none;
 }
 
 .logo:hover {
-  color: var(--primary-color);
-  text-shadow: var(--glow-blue);
-  transform: scale(1.05);
+  color: var(--accent-color);
+  text-shadow: none;
+  transform: scale(1.02);
 }
 
 nav ul {
@@ -209,8 +204,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--primary-color);
-  text-shadow: var(--glow-blue);
+  color: var(--accent-color);
+  text-shadow: none;
   transform: translateY(-1px);
 }
 
@@ -220,11 +215,11 @@ nav ul li a::after {
   bottom: -2px;
   left: 0;
   width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  height: 2px;
+  background: var(--accent-color);
   border-radius: 2px;
   transition: var(--transition-normal);
-  box-shadow: var(--glow-blue);
+  box-shadow: none;
 }
 
 nav ul li a:hover::after {
@@ -252,7 +247,7 @@ nav ul li a:hover::after {
    HERO SECTION
    ======================================== */
 .hero {
-  background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+  background: var(--bg-primary);
   color: var(--text-primary);
   padding: calc(var(--space-3xl) * 2) var(--space-xl) var(--space-3xl);
   text-align: center;
@@ -268,21 +263,31 @@ nav ul li a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(8, 145, 178, 0.1) 0%, transparent 50%);
-  opacity: 0.7;
+  background: none;
+  opacity: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
   margin-bottom: var(--space-md);
   animation: fadeInUp 1s ease-out;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
 }
 
 .hero p {
@@ -298,7 +303,7 @@ nav ul li a:hover::after {
 .btn {
   display: inline-block;
   padding: var(--space-md) var(--space-xl);
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--text-inverse);
   text-decoration: none;
   border-radius: var(--radius-md);
@@ -310,14 +315,14 @@ nav ul li a:hover::after {
   text-align: center;
   box-shadow: var(--shadow-md);
   animation: fadeInUp 1s ease-out 0.4s both;
-  text-shadow: var(--glow-blue);
+  text-shadow: none;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--glow-blue);
-  background: var(--primary-light);
-  text-shadow: var(--glow-blue);
+  box-shadow: var(--shadow-lg);
+  background: var(--accent-light);
+  text-shadow: none;
 }
 
 .btn:active {
@@ -326,39 +331,39 @@ nav ul li a:hover::after {
 
 .btn-outline {
   background: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  box-shadow: var(--glow-blue);
-  text-shadow: var(--glow-blue);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  box-shadow: none;
+  text-shadow: none;
 }
 
 .btn-outline:hover {
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--text-inverse);
-  box-shadow: var(--glow-blue);
+  box-shadow: var(--shadow-md);
   text-shadow: none;
 }
 
 .btn-secondary {
-  background: var(--secondary-color);
-  text-shadow: var(--glow-purple);
+  background: var(--text-secondary);
+  text-shadow: none;
 }
 
 .btn-secondary:hover {
-  background: var(--secondary-light);
-  box-shadow: var(--glow-purple);
-  text-shadow: var(--glow-purple);
+  background: var(--text-primary);
+  box-shadow: var(--shadow-md);
+  text-shadow: none;
 }
 
 .btn-success {
-  background: var(--accent-color);
-  text-shadow: var(--glow-green);
+  background: #22c55e;
+  text-shadow: none;
 }
 
 .btn-success:hover {
-  background: var(--accent-light);
-  box-shadow: var(--glow-green);
-  text-shadow: var(--glow-green);
+  background: #16a34a;
+  box-shadow: var(--shadow-md);
+  text-shadow: none;
 }
 
 
@@ -422,13 +427,47 @@ nav ul li a:hover::after {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: var(--primary-color);
+  background: var(--accent-color);
   border-radius: var(--radius-sm);
 }
 
 /* ========================================
    PROFILE PHOTO COMPONENT
    ======================================== */
+.hero-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 300px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+  animation: fadeInUp 1s ease-out 0.1s both;
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: var(--font-size-base);
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
 .profile-photo {
   text-align: center;
   margin: calc(var(--space-3xl) * -1) auto var(--space-3xl);
@@ -444,6 +483,7 @@ nav ul li a:hover::after {
   border: 6px solid var(--bg-card);
   box-shadow: var(--shadow-lg);
   transition: var(--transition-normal);
+  display: none;
 }
 
 .profile-photo img:hover {
@@ -530,7 +570,7 @@ nav ul li a:hover::after {
 .skill-icon {
   font-size: var(--font-size-5xl);
   margin-bottom: var(--space-md);
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .skill-progress {
@@ -544,7 +584,7 @@ nav ul li a:hover::after {
 
 .skill-progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: var(--accent-color);
   border-radius: var(--radius-sm);
   transition: width 2s ease-in-out;
   width: 0;
@@ -591,8 +631,8 @@ nav ul li a:hover::after {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
 .form-group textarea {
@@ -630,18 +670,19 @@ footer {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: var(--bg-secondary);
-  color: var(--text-tertiary);
+  background: transparent;
+  color: var(--accent-color);
   text-decoration: none;
   border-radius: var(--radius-full);
   transition: var(--transition-normal);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--accent-color);
+  font-size: var(--font-size-lg);
 }
 
 .social-links a:hover {
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--text-inverse);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
@@ -741,6 +782,11 @@ footer {
     padding: calc(var(--space-3xl) * 1.5) var(--space-md) var(--space-2xl);
   }
   
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
   .section {
     padding: var(--space-2xl) var(--space-md);
   }
@@ -796,6 +842,8 @@ footer {
     --text-tertiary: #cbd5e1;
     --border-light: #334155;
     --border-medium: #475569;
+    --accent-color: #3b82f6;
+    --accent-light: #60a5fa;
   }
 }
 
@@ -812,8 +860,8 @@ footer {
 
 .filter-btn {
   background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
   padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
   cursor: pointer;
@@ -824,7 +872,7 @@ footer {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--text-inverse);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -845,7 +893,7 @@ footer {
 .project-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -862,8 +910,8 @@ footer {
 }
 
 .project-tag {
-  background: rgba(37, 99, 235, 0.1);
-  color: var(--primary-color);
+  background: rgba(0, 102, 204, 0.1);
+  color: var(--accent-color);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
@@ -898,7 +946,7 @@ footer {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--primary-color);
+  background: var(--accent-color);
 }
 
 .timeline-item {
@@ -913,7 +961,7 @@ footer {
   top: var(--space-sm);
   width: 12px;
   height: 12px;
-  background: var(--primary-color);
+  background: var(--accent-color);
   border-radius: var(--radius-full);
   transform: translateX(-50%);
 }
@@ -942,7 +990,7 @@ footer {
 }
 
 .timeline-date {
-  color: var(--primary-color);
+  color: var(--accent-color);
   font-weight: 600;
   font-size: var(--font-size-sm);
   margin-bottom: var(--space-sm);
@@ -985,14 +1033,14 @@ footer {
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md);
-  background: rgba(37, 99, 235, 0.05);
+  background: rgba(0, 102, 204, 0.05);
   border-radius: var(--radius-lg);
   transition: var(--transition-normal);
   border: 1px solid var(--border-light);
 }
 
 .contact-item:hover {
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(0, 102, 204, 0.1);
   transform: translateX(5px);
   box-shadow: var(--shadow-md);
 }
@@ -1000,7 +1048,7 @@ footer {
 .contact-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -1027,7 +1075,7 @@ footer {
 }
 
 .contact-details a:hover {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 /* ========================================
@@ -1043,7 +1091,7 @@ footer {
 .workshop-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -1060,8 +1108,8 @@ footer {
 }
 
 .workshop-tag {
-  background: rgba(37, 99, 235, 0.1);
-  color: var(--primary-color);
+  background: rgba(0, 102, 204, 0.1);
+  color: var(--accent-color);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
@@ -1085,8 +1133,8 @@ footer {
 }
 
 .skill-tag {
-  background: rgba(37, 99, 235, 0.1);
-  color: var(--primary-color);
+  background: rgba(0, 102, 204, 0.1);
+  color: var(--accent-color);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
@@ -1178,20 +1226,20 @@ footer {
 }
 
 .instagram-item:hover {
-  border-color: var(--primary-color);
+  border-color: var(--accent-color);
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
 
 .instagram-item i {
   font-size: 3rem;
-  color: var(--primary-color);
+  color: var(--accent-color);
   margin-bottom: var(--space-lg);
-  background: linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+  background: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: var(--glow-blue);
+  text-shadow: none;
 }
 
 .instagram-item h4 {
